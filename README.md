@@ -34,6 +34,12 @@ GPT-2 (Generative Pre-trained Transformer 2) is a decoder-only transformer model
 - `src/dataloader.py`: The "librarian" — manages data feeding into the model.
 - `src/inference.py`: The "interactor" — generates text from a trained model.
 
+### Generating Text (Inference)
+Once trained, use the inference script to generate text. Note that the script expects a model checkpoint in the `./logs/` directory (e.g., `model_95365.pt`).
+```bash
+python src/inference.py --prompt="The future of AI is" --num_seq=3 --max_tokens=100
+```
+
 ---
 
 ## 🧠 Medium: Understanding the Transformer Architecture
